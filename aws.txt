@@ -1,0 +1,123 @@
+1.If you want to use an SSL protocol but do not want to terminate the connection on your load balancer, you can use a __________ protocol for connection from the client to your load balancer.
+iHTTP
+ii.TSL
+iii.HTTPS
+iv.TCP
+
+2.You are building an automated transcription service in which Amazon EC2 worker instances process an uploaded audio file and generate a text file. You must store both of these files in the same durable storage until the text file is retrieved, but you do not know what the storage capacity requirements are. Which storage option is both cost-efficient and scalable?
+i.Multiple Amazon EBS volume with snapshots
+ii.A single Amazon Glacier Vault
+iii.A single Amazon S3 bucket
+iv.Multiple instance stores
+
+3.In the event of a planned or an unplanned outage of your primary DB instance, Amazon RDS automatically switches to a standby replica in another Availability Zone if you have enabled_________.
+i.More than one read replica
+ii.More than one write replica
+iii.Multiple Availability Zones
+iv.Multi Region Deployment
+
+4.Which of the following approaches provides the lowest cost for Amazon elastic block store snapshots while giving you the ability to fully restore data?
+i.Maintain two snapshots: the original snapshot and the latest incremental snapshot.
+ii.Maintain a volume snapshot; subsequent snapshots will overwrite one another.
+iii.Maintain a single snapshot; the latest snapshot is both incremental and complete.
+iv.Maintain the most current snapshot; archive the original and increment to Amazon Glacier.
+
+5.You try to connect via SSH to a newly created Amazon EC2 instance and get one of the following error messages: 'Network error: connection timed out" or "Error connecting to [instance], reason  Connection timed out: connect,' you have confirmed that the network and security group rules are configured correctly and the instance is passing status checks. What steps should you take to identify the source of the behavior? (Select all that apply)
+i.Verify that the private key file corresponds to the Amazon EC2 key pair assigned at launch.
+ii.Verify that your IAM user policy has permission to launch Amazon EC2 instances.
+iii.Verify that you are connecting with the appropriate user name for your AMI.
+iv.Verify that the Amazon EC2 instance was launched with the proper IAM role.
+v.Verify that your federation trust to AWS has been established.
+
+6.In a VPC network, access control lists (ACLs) act as a firewall for associated subnets, controlling both inbound and outbound traffic at the __________ level
+i.Full VPC
+ii.Customer Gateway
+iii.EC2 instance
+iv.Subnet
+
+7.You try to enable lifecycle policies on one of the S3 buckets created by you, but you are not able to do so on that particular bucket. What could be the reason?
+i.Bucket is corrupted.
+ii.Versioning is not enabled on that bucket.
+iii.Bucket type is not correct.
+iv.Versioning is enabled on the bucket
+
+8.Each EC2 instance has a default network interface that is assigned a primary private IP address on your Amazon VPC network. What is the name given to the additional network interfaces that can be created and attached to any Amazon EC2 instance in your VPC?
+i.Elastic IP
+ii.Elastic Network Interface
+iii.AWS Elastic Interface
+iv.AWS Network ACL
+
+9.What does the following policy for Amazon EC2 do? { Statement: [{ Effect:Allow, Action:ec2: Describe, Resource: }
+i.Allow users to use all actions on an EC2 instance.
+ii.Allow users to use actions that start with 'Describe' across all the EC2 resources.
+iii.Allow users to use actions that does not have the keyword "Describe' across all the EC2 resources.
+iv.Allow a group to be able to Describe with run, stop, start, and terminate instances
+
+10.Which of the following IP address mechanisms are supported by ELB?
+i.IPv4
+ii.IPv5
+iii.IPv6
+iv.IPv3
+
+11.Which ELB component is responsible for monitoring the Load Balancers?
+i.Controller service
+ii.Load Balancer
+iii.Auto Scaling
+iv.Load Manager
+
+12.An application hosted at the EC2 instances receives HTTP requests through the ELB. Each request has an X-Forwarded-For request header, having three IP addresses. Which of the following IP address will be a part of this header?
+i.IP address of ELB
+ii.IP address of Forward Request
+iii.IP address of client
+iv.IP address of CloudWatch
+
+13.The load balancer does not distribute traffic across ________.
+i.One Availability Zone
+ii.Domains
+iii.Availability Zones within a region
+iv.Regions
+
+14. You've created production architecture on AWS. It consists of one load balancer, one route53 domain, two Amazon S3 buckets, Auto Scaling policy, and Amazon CloudFront for content delivery. Your manager asks you to duplicate this architecture by using a JSON based template. Which of the following AWS service would you use to achieve this?
+i.Amazon DynamoDB
+ii.Amazon Simple DB
+iii.Amazon CloudFormation
+iv.Amazon Bootstrap
+
+15.A customer has a website which is accessible over the Internet and he wants to secure the communication and decides to implement HTTPS instead of HTTP. He has configured EC2 instance behind an ELB. Where should you configure the SSL certificate?
+i.Not possible in AWS
+ii.SSL certificate will be installed at ELB and the listener port should be changed from 80 to 443 to allow the traffic to reach EC2
+iii.SSL certificate will be installed at EC2 and listener port should be changed from 80 to 443
+iv.SSL certificate will be installed at EC2 and listener port can remain at 443
+
+16.You have created a custom configured Amazon instance using Linux, containing all your software and applications. If you want to use the same setup again, what is the best way to do it?
+i.Create a back up copy of the EBS service
+ii.Create a backup of the EC2 instances only
+iii.Create a snapshot of the AMI only
+iv.Create an EBS Image (AMI)
+
+17. With regards to VPC, what is the default maximum number of virtual private gateways allowed per region?
+i.10
+ii.15
+iii.5
+iv.1
+
+18.Elasticity is a fundamental property of the cloud. Which of the following best describes elasticity?
+i.The power to scale computing resources up and down easily with minimal friction
+ii.Ability to create services without having to administer resources
+iii.Process by which scripts notify you of resource so you can fix them manually.
+iv.Power to scale computing resources up easily but not scale down
+
+19.With regards to RDS, the standby should be in the same ______________ as the primary instance.
+i.Availability Zone
+ii.Region
+iii.VPC
+iv.Subnet
+
+20.AWS Identity and Access Management is available through which of the following interfaces?
+i.AWS Management Console
+ii.Command line interface (CLI)
+iii.IAM QUERY API
+iv.Elastic Load Balancer
+v.Cloud Formation
+
+
